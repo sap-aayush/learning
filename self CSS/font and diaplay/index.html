@@ -6,21 +6,38 @@
     <title>fonts and display</title>
     <style>
         .box1{
-            height: 50px;
+            height: 1050px;
             width: 100px;
             background-color: red;
-            
+            display: inline;
         }
         .box2{
-            height: 50px;
+            height: 1050px;
             width: 100px;
-            background-color: rgb(54, 5, 252);
-            
+            background-color: rgb(111, 101, 152);
+            display: inline;
         }
+
+        /* Naturally div is the block element so
+        making the display inline allows them to come in the same line and also allows the next element to come after it. 
+        
+        HERE IN THE INLINE WE CAN NOT SPECIFY THE WIDTH AND THE HEIGHT OF THE ELEMENT.  NIETHER THE MARGIN OR THE PADDING OF THE TOP OR BOTTOM CAN BE USED
+
+        AND OLY OF THE LEFT AND RIGHT CAN BE USED!
+        */
+
+
+         /* so in instead of keeping the inline property if want to use the height width or the margins then the inline-block is used 
+         display: inline-block;
+          */
+        
+         /* when the display:none; is used then the elemnt is removed from the document and any ohter element can take its place   where as when the visibility: none is used then it is just hidden */
+
+
     </style>
 </head>
 <body>
-    <div class="box1"></div>
-    <div class="box2"></div>
+    <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ad pariatur impedit in dicta adipisci magni optio dolore sequi. Sed quia exercitationem earum veritatis, ipsum distinctio. Pariatur ea possimus quae consectetur. Possimus, reprehenderit nam.</div>
+    <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel soluta quibusdam a, tempora consequatur nam molestiae similique mollitia alias doloribus inventore cum accusamus aliquid sequi beatae necessitatibus maiores in velit praesentium fugiat pariatur non.</div>
 </body>
 </html>
