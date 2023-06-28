@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background colors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 350px;
+            height: 340px;
+            background-color: rgb(71, 138, 138);
+            color: white;
+            background-image: url('img2.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 3px solid greenyellow;
+            background-position: bottom center;
+             background-attachment: scroll; /* tells if the image scroll with content */
+
+             /* background short hand
+            EVERYTHING ALTOGHETHER  
+             background: red url('xyz.png') no-repeat fixed right top; */
+             
+        }
+        body{
+            height: 350px;
+            background-image: url('img1.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quam voluptate nemo illum maiores incidunt reiciendis. Sapiente voluptates similique pariatur repellat asperiores corporis, maiores doloremque ratione commodi delectus in et dolore culpa architecto eum.
+    </div>
+</body>
+</html>
