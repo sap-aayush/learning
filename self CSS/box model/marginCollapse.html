@@ -1,0 +1,43 @@
+<!-- whenever the margin of the two elemnts collapse no the elemets but the margin then the equivalent margin is the larger of the both  i.e. both of them share the common larger margin  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background-color: red;
+            margin: 20px;
+            padding: 10px;
+            height: 20px;
+            width: 230px;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: aqua;
+            margin: 20px;
+            padding: 10px;
+            height: 30px;
+            border: 3px solid rgb(246, 163, 80);
+            box-sizing: border-box;
+
+            /* adding the border box feature allows the space containing the border and margin of the content too */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus delectus iste nesciunt dolore? Vero reiciendis labore facilis quaerat perferendis, expedita quas tempore sequi repellat, voluptas aliquam adipisci porro id quibusdam quidem nulla beatae, maxime ipsum? Assumenda deserunt, enim tempore maxime quibusdam aliquam deleniti earum nam repellendus ducimus, quos laboriosam.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis obcaecati harum iure atque laudantium commodi ullam at, iste, cupiditate laboriosam hic doloribus illum similique accusamus? A, sed blanditiis culpa enim soluta iste fuga illo ratione, vel laboriosam neque atque vero!
+    </div>
+</body>
+</html>

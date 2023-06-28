@@ -1,0 +1,54 @@
+<!-- CSS takes all the elementsas the box models only as one after the other i.e. box in the box 
+
+the most outer is margin then border then padding and content at the last which can be remebered as by the code mere bhai padh le chhote  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            height: 420px;
+            width: 350px;
+            background-color: blueviolet;
+            background-size: fit-content;
+
+            /* setting the margin and the padding sets the same from all of the four sides */
+            margin: 10px 7px;
+            padding: 15px;
+
+            /* mpr the specific part of the margin we can use specific codes like margin-top and else else */
+
+            /* but the best option is to use the 
+            margin : 2px 4px 8px 12 px ;  */
+
+            /* this makes them altogether start from the top and move CW */
+
+
+            /* also if there is written 
+            margin : 4px 6px;  i.e. only two values then the first one will be for the top and bottom and the second one will be for the left adn right */
+
+            /* border: 5px solid black; */
+
+            /* Thus the total height of the element is given the 
+            total height = height specified +2*margin + 2* border + 2* padding */
+
+            border-width: 5px;
+            border-style: dashed double;
+            border-color: yellow;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptate dolor atque labore dignissimos, nam consequuntur non esse libero et inventore consectetur. Expedita recusandae itaque sapiente? Esse qui distinctio neque temporibus commodi consequuntur eum aspernatur, nostrum laborum error quae vel reiciendis magni sapiente a cumque delectus nobis eligendi deleniti similique!
+    </div>
+</body>
+</html>
