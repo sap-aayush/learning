@@ -1,0 +1,103 @@
+<!--  making a completion bar on the top when rendering  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 8</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 120px;
+            background-color: blue;
+        }
+        ul{
+            padding: auto;
+            display: flex;
+            align-items: center;
+        }
+        ul li{
+            padding: 20px;
+            margin: 20px;
+            color: bisque;
+            list-style: armenian;
+        }
+        main{
+            height: 900px;
+            background-color: black;
+        }
+        .progress{
+            background-color: red;
+            height: 2px;
+            animation: load 2s 1 forwards ease;
+        }
+
+        @keyframes load {
+            0%{
+                width: 0vw;
+            }
+            50%{
+                width: 60vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+        img{
+            display: inline-block;
+            margin: auto;
+            width: 20vw;
+            
+        }
+        @keyframes rotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+        }
+        .slider{
+            display: flex;
+            justify-content: center;
+            height: 530px;
+            background-color: aquamarine;
+            margin: auto;
+            overflow: hidden;
+        }
+        .img1{
+            transform: translate(100vw);
+        }
+        .img2{
+            transform: translate(0vw);
+        }
+        .img3{
+            transform: translate(-100vw);
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header>
+      <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="slider">
+        <!-- <img src="img2.jpg" alt=""> -->
+        <img src="img3.jpg" alt="" class="img1">
+        <img src="img4.jpg" alt="" class="img2">
+        <img src="img5.jpg" alt="" class="img3">
+        </div>
+    </main>
+</body>
+</html>
