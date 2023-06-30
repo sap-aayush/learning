@@ -1,0 +1,78 @@
+<!--
+in order to specify the psoition of various elemrnts flex is used...
+
+display:flex;
+by above me this creates a flex box and all the corresponding elements are arranged in the box as per...
+
+in this box there is the main axis which is the horizontal passing mid way  and the cross axis which usually is the vertical but direction depends on the flex direction:......;
+
+then the flex container and the flex items are in it...
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row-reverse;  /* direction of the flex items */
+
+            flex-wrap: wrap-reverse; /* when the size changed then flex items wrap as per */
+
+            justify-content: center;
+
+            background-color: aquamarine;
+            height: 150vh;
+            align-items: center;
+            /* when the align items center is used then the during decreasing size then some space between the items may come so i fwan tto remove then the align content: center; is used  */
+            align-content: center;
+        }
+        .box1{
+            height: 340px;
+            width: 300px;
+            background-color: red;
+            text-align: center;
+            text-shadow: rgb(68, 0, 255) 1px 0 10px;
+            border: 2px solid black;
+
+            /* by default the order of all the flex items is set to be 0 and then when the order is specified then the items align as per
+            */
+            order: -1;
+
+            /* then comes the align-self:...; this makes the particular item to have alignment apart from the other */
+            align-self: flex-end;
+
+            /* flex grow and the flex shrink makes the size to inc or dec */
+
+        }
+        .box2{
+            height: 340px;
+            width: 300px;
+            background-color: rgb(34, 0, 255);
+            text-shadow: rgb(255, 0, 0) 1px 0 10px;
+            color: white;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            box 1
+        </div>
+        <div class="box2">
+            box 2
+        </div>
+        <div class="box2">
+            box 2b
+        </div>
+        <div class="box2">
+            box 2c
+        </div>
+    </div>
+</body>
+</html>
