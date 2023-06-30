@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: rgb(13, 121, 230); 
+    font-family: 'Lato', sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none; 
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{ 
+    font-weight: bolder;
+}
+.container{
+    min-height: calc(100vh - 58px - 10vh);
+}
+footer{
+    height: 10vh;
+    background-color: rgb(13, 121, 230);
+    color: white;
+    font-family: 'Agdasima', sans-serif;
+    font-size: large;
+}
