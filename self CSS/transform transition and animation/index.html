@@ -1,0 +1,65 @@
+<!--  
+    2D Transformations
+    translate()
+    rotate
+    scaleX   
+    scaleY
+    skew    this makes rotation together in x and y
+    matrix  
+    matrix makes all the transformations together by taking 6 values see MDN 
+    
+    scale
+    scale makes the element to srink or expand by that factor
+
+    3D transformstions
+    rotateX
+    rotateY
+    rotateZ
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform </title>
+    <style>
+        .container{
+            background-color: brown;
+            height: 450px;
+        }
+        .box{
+            background-color: aqua;
+            border: 3px solid yellow;
+            transform: translate(30px,140px) rotate(10deg);  
+
+            /* translate is 2D i.e. takes x and y position to move */
+
+            /* initially the transform origin is center and all the rotation and all taked place wrt it ... we can change it too */
+            
+            transform-origin: 0;
+        }
+        img{
+            width: 500px;
+            height: auto;
+            transition-property: width, height;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: .2s;
+
+            /* all can be written together in transition but in same order */
+        }
+        img:hover{
+            width: 50px;
+            height: max-content;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, adipisci quos! Minima recusandae doloribus, doloremque veritatis quasi nihil ut id quaerat. Explicabo repudiandae ab minus inventore, minima deserunt nemo veritatis, ipsum non quidem adipisci aliquam.</div>
+        <img src="img.jpg" alt="image">
+     </div>
+</body>
+</html>
