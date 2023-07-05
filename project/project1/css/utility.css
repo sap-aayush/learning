@@ -1,7 +1,26 @@
 /* here we will have that things which can be utilitized many times */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
 
 .text-all-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn{
+    padding: 5px 10px;
+    color: white;
+    background: rgb(13, 121, 230);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;  /* makes the hand icon on taking the cursor  */
+    font-weight: 900;
+}
+
+.my-2{
+    margin: 26px 0;
+}
+
+.text-center{
+    text-align: center;
 }

@@ -1,56 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
-    background: rgb(13, 121, 230); 
+header {
+    background: rgb(13, 121, 230);
     font-family: 'Lato', sans-serif;
 }
 
-nav{
+nav {
     display: flex;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo img{
+
+.logo img {
     width: 88px;
     padding: 0 25px;
 }
 
-nav ul{
+nav ul {
     height: 58px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-nav ul li{
-    list-style: none; 
+nav ul li {
+    list-style: none;
     padding: 0 23px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-nav ul li a:hover{ 
+nav ul li a:hover {
     font-weight: bolder;
 }
-.search{
-    margin-top: 17px;
+
+.search {
+    display: flex;
+    align-items: center;
 }
-.container{
+
+.search input {
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    /* this 16px is of the right margin btw the items so make the search bar closer  */
+    padding: 0 12px;
+}
+
+.container {
     min-height: calc(100vh - 58px - 10vh);
+    /* height left from the header and the footer */
+
 }
-footer{
+
+.btn:hover {
+    border-color: rgb(13, 121, 230);
+}
+
+.slider img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+}
+
+.search button {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: 900;
+}
+
+.card h2 {
+    font-family: 'Agdasima', sans-serif;
+}
+
+.card {
+    background-color: rgb(231, 239, 245);
+    max-width: 95vw;
+    margin: auto;
+    font-family: 'Agdasima', sans-serif;
+}
+
+.card-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12vw;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+footer {
     height: 10vh;
     background-color: rgb(13, 121, 230);
     color: white;
