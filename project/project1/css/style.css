@@ -44,6 +44,9 @@ nav ul li a{
 nav ul li a:hover{ 
     font-weight: bolder;
 }
+.search{
+    margin-top: 17px;
+}
 .container{
     min-height: calc(100vh - 58px - 10vh);
 }
