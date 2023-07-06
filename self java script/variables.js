@@ -33,3 +33,5 @@ console.log(b)  // here again the vlaue of the b remains 78
 // also the re declaration is possible in the var but not in the let
 
 const author = "sap"  // can't be changed
+
+// also the java script is quite sensitive so it self understands in=f any minor error like semi colons absent
