@@ -3,11 +3,17 @@ let name = "aYuSH"
 console.log(name.toUpperCase())
 console.log(name.toLowerCase())
 
-// slide cuts the part of the string with provided index
+// slice cuts the part of the string with provided index
 console.log(name.slice(2,4))
+// if the next argument not givem then it slice till the last
+
+// in the slice we can also write the string to be sliced as an argument by calculating its length see PRACTICE 4
+
 
 // replace change the particular thung by given thing
 let newName = name.replace("aYu", "peR")
+
+
 
 // concat adds to the back... we can give as many arguments
 
