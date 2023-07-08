@@ -1,4 +1,4 @@
-// take input gae from the prompt and alert if he cna drive
+// take input age from the prompt and alert if he can drive
 
 let age = prompt("enter your age")
 age = Number.parseInt(age)
