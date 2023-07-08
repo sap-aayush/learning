@@ -14,11 +14,14 @@ let brr = a.filter((value) =>{
     return value<10
 })
 
+
+
 // reduce simply reduces an array to a simple vlaue by repeatedly performing an operations on the elemnts
 
 let crr = [1,2,3, 5, 6,1]
 const reduce_func = (h1,h2)=>{
     return h1+h2
 }
+// this function just adds the two numbers and then the result with the next number and so on
 let drr = crr.reduce(reduce_func)
-console.log(drr)
+console.log(drr) 
